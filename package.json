@@ -1,0 +1,51 @@
+{
+	"name": "@cricketnest/test32",
+	"description": "test33333",
+	"version": "0.0.1",
+	"author": "Test <test@gmail.com>",
+	"license": "MIT",
+	"keywords": [],
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"scripts": {
+		"dev": "pnpm build --watch",
+		"build": "tsup",
+		"lint": "biome check --write --unsafe .",
+		"link:self": "pnpm link --global"
+	},
+	"types": "./dist/index.d.ts",
+	"exports": {
+		".": {
+			"require": "./dist/index.js",
+			"import": "./dist/index.mjs"
+		}
+	},
+	"files": ["dist"],
+	"engines": {
+		"node": ">=18.0.0"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/node": "22.13.11",
+		"@types/react": "18.3.13",
+		"@types/react-dom": "18.3.1",
+		"dotenv": "^16.4.7",
+		"react": "18.3.1",
+		"react-dom": "18.3.1",
+		"tsup": "8.4.0",
+		"typescript": "5.8.2"
+	},
+	"peerDependencies": {
+		"react": ">=18",
+		"react-dom": ">=18"
+	},
+	"pnpm": {
+		"onlyBuiltDependencies": [
+			"@biomejs/biome",
+			"@swc/core",
+			"esbuild"
+		]
+	}
+}

@@ -1,0 +1,14 @@
+{
+	"compilerOptions": {
+		"esModuleInterop": true,
+		"target": "es2018",
+		"jsx": "react-jsx",
+		"module": "ESNext",
+		"lib": ["ES2018"],
+		"moduleResolution": "Bundler",
+		"skipLibCheck": false,
+		"allowJs": true,
+		"strict": true,
+		"noEmit": true
+	}
+}
